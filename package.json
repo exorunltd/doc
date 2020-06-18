@@ -26,7 +26,7 @@
   "scripts": {
     "build": "gatsby build",
     "start": "gatsby develop",
-    "serve": "gatsby serve",
+    "serve": "gatsby serve --host=0.0.0.0 --port 80",
     "clean": "gatsby clean"
   }
 }
