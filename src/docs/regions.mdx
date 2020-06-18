@@ -1,0 +1,34 @@
+# Regions
+
+## What Are Regions?
+
+The Exorun Platform gets close to users by running applications in datacenters close to users. These datacenters are identified by region.
+
+The platform works out which region an application should be running in based on the incoming connection from a client. It then starts the application in that region and completes the connection.
+
+This means that an application does not need to know which region it is running in.
+
+
+## Discovering your Application's Region
+
+<div style="overflow-x:auto;">
+  <table>
+    <tr>
+      <th>Region ID</th>
+      <th>Region Location</th>
+    </tr>
+    <tr>
+      <td>ams</td>
+      <td>Amsterdam, Netherlands</td>
+    </tr>
+    <tr>
+      <td>osl</td>
+      <td>Oslo, Norway</td>
+    </tr>
+  </table>
+</div>
+
+## Usage
+```sh
+exorun regions
+```

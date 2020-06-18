@@ -1,0 +1,39 @@
+# SSH Keys
+To deploy your app using git you need to add SSH public key.
+The process of adding SSH keys vary across different OS.
+
+#### OS X or Linux
+If you use Exorun cli (recommended), you only need to run exorun login command and system will generate the key if there are no keys.
+
+***If you use ssh-keygen, follow these steps***
+
+Generate the key:
+```sh
+$ ssh-keygen -t rsa -b 2048 -f $HOME/.ssh/username@exorun.io.id_rsa
+```
+You can also add the final key to ssh-agent:
+```sh
+ssh-add $HOME/.ssh/username@exorun.io.id_rsa
+```
+
+Copy your public key:
+```sh
+$ xsel -b < $HOME/.ssh/username@exorun.io.id_rsa.pub # (Linux)
+```
+```sh
+$ pbcopy < $HOME/.ssh/username@exorun.io.id_rsa.pub # (Mac OS X)
+```
+#### Windows
+Adding SSH keys on Windows you need to follow these steps:
+Set up git for Windows, that includes ssh utilities.
+In Start Menu choose Git Bash item that opens a console window.
+
+Run this command:
+```sh
+$ ssh-keygen -t rsa -b 2048 -f $HOME/.ssh/username@exorun.io.id_rsa
+```
+Open Explorer and enter this path:
+```sh
+%USERPROFILE%/.ssh
+```
+Open file `username@exorun.io.id_rsa.pub` in Notepad, copy everything.

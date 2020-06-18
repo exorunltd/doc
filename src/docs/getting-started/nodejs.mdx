@@ -1,0 +1,31 @@
+ ## Getting Started with Node.js
+This tutorial will show you how to deploy your Node.js app in several minutes. These instructions will also give you enough information to make the most out of Exorun.
+
+### Prepare the app
+In this step, you will prepare a sample application that’s ready to be deployed to Exorun.
+
+To clone a local version of the sample application that you can then deploy to Exorun, execute the following commands in your local command shell or terminal:
+
+```sh
+$ git clone https://github.com/exorunltd/node-js-getting-started
+$ cd node-js-getting-started
+```
+You now have a functioning Git repository that contains a simple application as well as a package.json file, which is used by Node’s dependency manager.
+
+### Deploy the app
+In this step you will deploy the app to Exorun.
+
+Create an app on Exorun, which prepares exorun to receive your source code.
+
+```sh
+$ exorun create [appname]
+  Creating b44a48e40... done
+  https://appname.exorun.dev | git@git.exorun.io:yourusername/appname.git
+  Git remote mstack added
+```
+When you create an app, a git remote (called exorun) is also created and associated with your local git repository.
+
+Now deploy your code:
+```sh
+$ git push exorun master
+```
