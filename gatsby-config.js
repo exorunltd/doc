@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: `Exorun Docs`,
     siteTitleShort: `Exorun Docs`,
     siteDescription: `Exorun Documentation`,
-    siteUrl: `https://exorun.io/doc`,
+    siteUrl: `https://docs.exorun.io`,
     siteAuthor: `@exorunltd`,
     siteImage: `/banner.png`,
     siteLanguage: `en`,
@@ -43,7 +43,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
-        siteUrl: `https://exorun.io/doc`,
+        siteUrl: `https://docs.exorun.io`,
       },
     },
     `gatsby-plugin-offline`,
